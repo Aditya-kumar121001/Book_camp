@@ -1,0 +1,199 @@
+*{
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 12%;
+}
+
+.logo{
+  max-width: 100%;
+  width: 115px;
+  height: auto;
+  color: #000;
+}
+
+.navmenu{
+  display: flex;
+}
+
+.navmenu li{
+  position: relative;
+}
+.navmenu a{
+  color: #212832;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 500;
+  padding: 15px 25px;
+  transition: all .42s;
+}
+.navmenu a::after{
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #212832;
+  bottom: -2px;
+  left: 0;
+  transition: all .42s;
+}
+.navmenu a:hover::after{
+  width: 100%;
+}
+.btn-icon{
+  display: flex;
+  align-items: center;
+}
+.nav-btn{
+  font-size: 17px;
+  color: #212832;
+  font-weight: 500;
+  padding:5px 15px;
+  border: 2px solid #212832;
+  border-radius: 5px;
+  margin-right: 20px;
+  transition: all .42;
+}
+.nav-btn:hover{
+  background-color: #212832;
+  color: #fff;
+}
+
+#menu-icon{
+  font-size: 35px;
+  color: #212832;
+  z-index: 10001;
+  cursor: pointer;
+  display: none;
+}
+/* Header is complete... */
+
+section{
+  padding: 60px 12%;
+}
+.home{
+  width: 100%;
+  height: 100vh;
+  /* background-image: url(image/camp.jpg); */
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.home-img img{
+  max-width: 100%;
+  width: 800px;
+  height: auto;
+}
+.home-text{
+  display: flex;
+flex-direction: column;
+align-items: center;
+height: 100%;
+margin-top: 40vh;
+}
+
+.home-text h4{
+  color: rgb(58, 55, 55);
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+.home-text h1{
+  color: black;
+  font-size: 65px;
+  font-family: 'Volkhov';
+  font-weight: 700;
+  line-height: 70px;
+  letter-spacing: -0.04em;
+  margin-bottom: 18px;
+}
+.home-text p{
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+.button{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn1{
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 10px 20px;
+  background: #f1a501;
+  border-radius: 10px;
+  margin-right: 40px;
+  transition: all .42s;
+}
+.btn1:hover{
+  transform: translateY(-5px);
+}
+.btn2{
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-weight: 500;
+  padding:10px 20px;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  transition: all .42s;
+}
+.btn2:hover{
+  transform: translateY(-5px);
+  background-color: #212832;
+  color: #fff;
+}
+/* End of hero section */
+.center-text{
+  text-align: center;
+  margin-bottom: 25px;
+}
+.cate-pro{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+.row{
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: center;
+}
+.card-image {
+  max-width: 100%;
+  height: auto;
+}
+.row h5{
+  font-size: 20px;
+}
+.row p{
+  margin: 10px 0;
+}

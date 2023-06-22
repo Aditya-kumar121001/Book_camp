@@ -1,0 +1,132 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travelling</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Open+Sans:wght@400;600;700&family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo"><H2>Camping</H2></a>
+
+      <ul class="navmenu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#campgrounds">Campgrounds</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/register">Register</a></li>
+      </ul>
+
+      <!-- <div class="btn-icon">
+            <a href="#" class="nav-btn">Sign Up</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div> -->
+    </header>
+
+    <section class="home" id="home">
+      <div class="home-text">
+        <h4>Best Destinations Around The India</h4>
+        <h1>Camp, Enjoy And Live</h1>
+        <p>"Escape to the great outdoors and immerse yourself in nature's beauty
+          with our unforgettable camping experiences."
+        </p>
+        <div class="button">
+          <a href="#" class="btn1">Find out more</a>
+          <a href="#" class="btn2"><span><i class="bx bx-play"></i></span>Play
+            Demo</a>
+        </div>
+      </div>
+
+      <!-- <div class="home-img">
+            <img src="image/camp.jpg" alt="">
+        </div> -->
+    </section>
+
+    <section class="category" id="flights">
+      <div class="center-text">
+        <h2>Campgrounds</h2>
+      </div>
+      <div class="cate-pro">
+      {{#each camps}}
+        <div class="row">
+          <h2>{{this.name}}</h2>
+          {{#each this.image}}
+            <img class="card-image" src="{{this}}" alt="Camp Image">
+          {{/each}}
+          <p>{{this.description}}</p>
+          <p>Price: {{this.price}}</p>
+          <p>Location: {{this.location}}</p>
+          <ul>
+            {{#each this.amenities}}
+              <li>{{this}}</li>
+            {{/each}}
+          </ul>
+        </div>
+      {{/each}}
+    </div>
+      <div class="cate-pro">
+        
+          {{!-- {{#each camps}}
+            <div class="row">
+            {{#each this.image}}
+              <img src="{{this}}" alt="Camp Image" />
+            {{/each}}
+            <h5>{{this.name}}</h5>  
+            </div>
+          {{/each}} --}}
+      
+        {{!-- <div class="row">
+          <img class="image" src="IMAGE.webp" alt="" />
+          <h5>Best Flights</h5>
+          <p>We deliver outsourced | aviation services for military customers</p>
+        </div>
+        <div class="row">
+          <img src="IMAGE.webp" alt="" class="image" />
+          <h5>Calculated Weather</h5>
+          <p>Build Wicket longer
+            <br />
+            admire do barton
+            <br />
+            vanity itself do in it. military</p>
+        </div>
+        <div class="row">
+          <img src="IMAGE.webp" alt="" class="image" />
+          <h5>Calculated Weather</h5>
+          <p>Build Wicket longer
+            <br />
+            admire do barton
+            <br />
+            vanity itself do in it. military</p>
+        </div>
+        <div class="row">
+          <img src="IMAGE.webp" alt="" class="image" />
+          <h5>Calculated Weather</h5>
+          <p>Build Wicket longer
+            <br />
+            admire do barton
+            <br />
+            vanity itself do in it. military</p>
+        </div>
+        <div class="row">
+          <img src="IMAGE.webp" alt="" class="image" />
+          <h5>Calculated Weather</h5>
+          <p>Build Wicket longer
+            <br />
+            admire do barton
+            <br />
+            vanity itself do in it. military</p>
+        </div> --}}
+      </div>
+    </section>
+  </body>
+</html>
